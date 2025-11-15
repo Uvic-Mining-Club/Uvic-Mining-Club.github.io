@@ -35,6 +35,12 @@ video::-webkit-media-controls {
     display:none !important;
 }
 
+.team-img {
+  width: 300px;
+  height: auto;
+  border-radius: 20px; /* optional */
+}
+
 .overlay {
   position: absolute;
   top: 0;
