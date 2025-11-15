@@ -36,7 +36,7 @@ video::-webkit-media-controls {
 }
 
 .team-img {
-  width: 300px;
+  width: 120px;
   height: auto;
   border-radius: 20px; /* optional */
 }
