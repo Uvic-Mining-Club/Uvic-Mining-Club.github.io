@@ -1,27 +1,19 @@
-# Context Documentation for Project Page
+# Context Documentation for Welcome page
 
-## 15 kV Switchgear
+Why Choose Uvic Mining Technologies
+Discover the opportunities and benefits of being a part of the future of mining technology.
+Cutting-edge Automation
+Proactive Maintenance
+Real-time Information
+Enhanced Safety Measures
+Efficiency and Productivity
+Network and Collaborate
+Skills Development
+Impactful Innovations
 
-Our team is now developing an enhanced automated fault detection system tailored explicitly for high-voltage (15kV) switchgear operating under some of the most challenging environmental conditions—dusty, hot, and humid mine sites. This upgrade builds upon our Motor Control Centers (MCCs) design principles by integrating more robust components suited to harsher conditions.
+We are a team of interdisciplinary engineering students at the University of Victoria, Canada. Our mission is to design and develop innovative solutions for industrial and mining applications, with a focus on automation, safety, and predictive maintenance.
 
-Like an MCC consolidates control for various motors, our upgraded switchgear setup will centrally manage and protect multiple high-voltage feeds essential for large-scale industrial processes. To prevent potential failures before they occur, we will employ infrared cameras to continuously scan for unusual temperature rises—“hot spotting”—within the equipment. By detecting these thermal anomalies early, our system can issue timely alerts, enabling technicians to proactively investigate and address the underlying issues.
-
-This predictive maintenance approach aims to enhance uptime and safety, ensuring that mining operations can continue running for extended periods without unexpected outages. The result is a more reliable electrical backbone optimized for the demanding conditions often found in today’s mining environments.
-
-## Motor Control Center
-
-An MCC (Motor Control Center) bank is a central hub for controlling multiple electric motors in big machines or industrial systems. Think of it as a big cabinet with switches and controls that help turn motors on and off, adjust their speed, and protect them from damage (like overheating or electrical surges).
-
-It organizes everything neatly in one place, making it easier to manage and maintain all the motors in a factory, building, or other extensive system. If something goes wrong, the MCC bank helps quickly locate and fix the issue. It's critical equipment to keep operations running smoothly and safely.
-
-Our team is developing an automated fault detection system for Motor Control Centers (MCCs). The goal is to identify potential issues before they escalate into actual faults, allowing electricians to inspect and resolve problems proactively. This early detection will help prevent equipment failures and ensure smoother, safer operations.
-
-## Images to used
-
-![MCC Bank](images/project/MCC.jpg)
-_Caption: An example of a Motor Control Center (MCC) bank, which houses multiple
-motor control units in a centralized cabinet._
-![15kV Switchgear](images/project/SwitchGear.jpg)
+Currently, we are in the planning phase of several projects, exploring both software and hardware approaches to enhance mining operations.
 
 # Project Requirements
 

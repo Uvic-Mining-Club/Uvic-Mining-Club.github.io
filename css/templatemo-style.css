@@ -248,7 +248,7 @@ video::-webkit-media-controls {
   color: #121212;
   letter-spacing: 1px;
   margin-top: 0px;
-  margin-bottom: 30px;
+  margin-bottom: 12px; /* tightened for consistent spacing */
 }
 
 .first-content {
@@ -256,7 +256,20 @@ video::-webkit-media-controls {
 }
 
 .first-content p {
-  margin: 0px 120px;
+  margin: 0px 120px 24px 120px; /* add bottom margin for consistent spacing between sections */
+}
+
+/* Responsive tweak: reduce horizontal margins and tighten spacing on small screens */
+@media only screen and (max-width: 767px) {
+  .first-content p {
+    margin: 0 20px 16px 20px;
+  }
+  .first-content {
+    padding: 40px 0px;
+  }
+  .first-content h4 {
+    margin-bottom: 8px;
+  }
 }
 
 .first-content .primary-button {
