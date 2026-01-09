@@ -36,9 +36,11 @@ video::-webkit-media-controls {
 }
 
 .team-img {
-  width: 120px;
-  height: auto;
-  border-radius: 20px; /* optional */
+	width: 300px;
+	height: 200px;
+    /* This prevents the image from looking "squashed" or "stretched" */
+    object-fit: cover;
+	border-radius: 20px; /* optional */
 }
 
 .overlay {
