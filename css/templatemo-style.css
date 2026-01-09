@@ -35,12 +35,32 @@ video::-webkit-media-controls {
     display:none !important;
 }
 
+/* possibly outdated now */
 .team-img {
 	width: 300px;
 	height: 200px;
     /* This prevents the image from looking "squashed" or "stretched" */
     object-fit: cover;
 	border-radius: 20px; /* optional */
+}
+
+.team-member-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* Aligns photo and text to the left */
+    gap: 40px; /* Space between the photo and the text */
+    padding: 30px 0;
+}
+
+.team-img-fixed {
+    /* MESS AROUND WITH THESE VALUES TO CHANGE SIZE */
+    width: 200px; 
+    height: 200px;
+    
+    object-fit: cover; /* Ensures the JPG doesn't stretch */
+    border: 5px solid #ffbb05; /* Matches your theme yellow */
+    border-radius: 50%; /* Makes it circular - remove this for a square */
+    flex-shrink: 0; /* Prevents the grid from squishing the image */
 }
 
 .overlay {
