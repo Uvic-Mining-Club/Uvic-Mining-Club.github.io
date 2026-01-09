@@ -54,8 +54,8 @@ video::-webkit-media-controls {
 
 .team-img-fixed {
     /* MESS AROUND WITH THESE VALUES TO CHANGE SIZE */
-    width: 200px; 
-    height: 200px;
+    width: 20px; 
+    height: 20px;
     
     object-fit: cover; /* Ensures the JPG doesn't stretch */
     border: 5px solid #ffbb05; /* Matches your theme yellow */
