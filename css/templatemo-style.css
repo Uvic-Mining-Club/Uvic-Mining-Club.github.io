@@ -54,14 +54,14 @@ video::-webkit-media-controls {
 
 .team-img-fixed {
     /* MESS AROUND WITH THESE VALUES TO CHANGE SIZE */
-    width: 20px; 
-    height: 20px;
-    
+    height : auto;
+    scale : 90%;
     object-fit: cover; /* Ensures the JPG doesn't stretch */
     border: 5px solid #ffbb05; /* Matches your theme yellow */
-    border-radius: 50%; /* Makes it circular - remove this for a square */
-    flex-shrink: 0; /* Prevents the grid from squishing the image */
-	aspect-ratio: 1/1;
+    border-radius: 20%; /* Makes it circular - remove this for a square */
+    box-sizing: border-box; /* Includes border in the width/height calculation */
+    object-position: center;
+}
 }
 
 .overlay {
@@ -350,6 +350,7 @@ video::-webkit-media-controls {
   text-align: left;
   margin-left: 15px;
   margin-right: 30px;
+	 width: 240px;
 }
 
 .second-slide .right-about-text h4 {
