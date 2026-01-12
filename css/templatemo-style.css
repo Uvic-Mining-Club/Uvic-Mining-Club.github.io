@@ -61,6 +61,7 @@ video::-webkit-media-controls {
     border: 5px solid #ffbb05; /* Matches your theme yellow */
     border-radius: 50%; /* Makes it circular - remove this for a square */
     flex-shrink: 0; /* Prevents the grid from squishing the image */
+	aspect-ratio: 1/1;
 }
 
 .overlay {
