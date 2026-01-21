@@ -45,23 +45,20 @@ video::-webkit-media-controls {
 }
 
 .team-member-container {
-    display: flex;
+    display: inline-block;
     align-items: center;
-    justify-content: flex-start; /* Aligns photo and text to the left */
-    gap: 40px; /* Space between the photo and the text */
-    padding: 30px 0;
+    padding: 30px;
+    width:400px
 }
 
 .team-img-fixed {
     /* MESS AROUND WITH THESE VALUES TO CHANGE SIZE */
-    height : auto;
-    scale : 90%;
-    object-fit: cover; /* Ensures the JPG doesn't stretch */
+    scale : initial;
+    object-fit: scale-down; /* Ensures the JPG doesn't stretch */
     border: 5px solid #ffbb05; /* Matches your theme yellow */
     border-radius: 20%; /* Makes it circular - remove this for a square */
     box-sizing: border-box; /* Includes border in the width/height calculation */
     object-position: center;
-}
 }
 
 .overlay {
@@ -347,10 +344,8 @@ video::-webkit-media-controls {
 }
 
 .second-slide .right-about-text {
-  text-align: left;
-  margin-left: 15px;
-  margin-right: 30px;
-	 width: 240px;
+  text-align: center;
+  
 }
 
 .second-slide .right-about-text h4 {
@@ -786,6 +781,9 @@ footer a {
   .fivth-content .left-info .social-icons {
     margin-top: 30px;
     margin-bottom: 60px;
+  }
+  .team-member-container{
+    max-width: 100%;
   }
 
 }
