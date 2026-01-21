@@ -1,0 +1,41 @@
+{
+  "leadership": [
+    { "name": "Brooklyn Giampaolo", "role": "Vice President External" },
+    { "name": "Doug Macgregor", "role": "Vice President & Director of Projects" },
+    { "name": "Liam Robertson", "role": "Co-President" },
+    { "name": "Teagan Smith", "role": "Co-President" }
+  ],
+  "business": [
+    { "name": "Kyla Wallace", "role": "Director of Marketing" },
+    { "name": "Manuel Donelly", "role": "Director of Finance" },
+    { "name": "Nicole Souza", "role": "Marketing Consultant" },
+    { "name": "Ramina Savina", "role": "Funding Consultant" }
+  ],
+  "software": [
+    { "name": "Trevor Jenks", "role": "Software Team Lead" },
+    { "name": "Alana Budd", "role": "Software Consultant" },
+    { "name": "Angus Laird", "role": "Software Consultant" },
+    { "name": "Colin Katmarian", "role": "Software Consultant" }
+  ],
+  "mech": [
+    { "name": "Fraser Jacoby", "role": "Mech Team Lead" },
+    { "name": "Adam Wilson", "role": "Mech Consultant" },
+    { "name": "Aidan Lane", "role": "Mech Consultant" },
+    { "name": "Amara McCann", "role": "Mech Consultant" },
+    { "name": "Cam Thompson", "role": "Mech Consultant" },
+    { "name": "Cole Stilwell", "role": "Mech Consultant" },
+    { "name": "Liam Fillinger", "role": "Mech Consultant" },
+    { "name": "Salma Mousavi-Khalkhali", "role": "Mech Consultant" },
+    { "name": "Sami Teitzel", "role": "Mech Consultant" }
+  ],
+  "elec": [
+    { "name": "Tanner Findlay", "role": "Elec Team Lead" },
+    { "name": "Jacob Roudolph", "role": "Elec Consultant" },
+    { "name": "Liam Hood", "role": "Elec Consultant" },
+    { "name": "Pavel Tkachyk", "role": "Elec Consultant" },
+    { "name": "Ryan Afsi", "role": "Elec Consultant" }
+  ],
+  "integration": [
+    { "name": "Simon Yang", "role": "Integration Specialist" }
+  ]
+}
