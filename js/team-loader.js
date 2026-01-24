@@ -12,11 +12,12 @@ async function loadTeamData() {
 
 // Check if an image exists for a team member
 function imageExists(imagePath) {
-    const img = new Image();
-    img.onload = function() { return true; };
-    img.onerror = function() { return false; };
-    img.src = imagePath;
-    return img.complete && img.naturalWidth !== 0;
+    return new Promise((resolve) => {
+        const img = new Image();
+        img.onload = function() { resolve(true); };
+        img.onerror = function() { resolve(false); };
+        img.src = imagePath;
+    });
 }
 
 // Build HTML for a team member with bio/profile
@@ -81,15 +82,15 @@ async function renderTeamPage() {
         const membersWithImages = [];
         const membersWithoutImages = [];
         
-        // Separate members by whether they have images
-        members.forEach(member => {
-            // Check if Trevor has an image and include him
-            if (member.name === 'Trevor Jenks') {
+        // Check each member for an image
+        for (const member of members) {
+            const imagePath = `img/profilepic/${member.name.replace(/\s+/g, '')}.jpg`;
+            if (await imageExists(imagePath)) {
                 membersWithImages.push(member);
             } else {
                 membersWithoutImages.push(member);
             }
-        });
+        }
         
         // Add category section heading
         html += `<div class="team-category-section">`;
