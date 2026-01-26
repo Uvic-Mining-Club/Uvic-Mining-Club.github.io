@@ -30,9 +30,6 @@ function buildTeamMemberBio(member) {
             <div class="right-about-text">
                 <h4>${member.name}</h4>
                 <p>${member.role}</p>
-                <div class="primary-button">
-                    <a href="#">View Profile</a>
-                </div>
             </div>
         </div>
     `;
