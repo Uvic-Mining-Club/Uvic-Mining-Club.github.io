@@ -75,7 +75,7 @@ video::-webkit-media-controls {
     border-bottom: none;
 }
 
-.team-category-heading {
+.team-category-heading { 
     font-size: 22px;
     text-transform: uppercase;
     color: #ffbb05;
@@ -159,6 +159,7 @@ video::-webkit-media-controls {
     letter-spacing: 0.5px;
     margin: 0 0 10px 0;
     font-weight: 600;
+    max-width:97%;
 }
 
 .team-member-card p {
@@ -873,9 +874,11 @@ footer a {
   }
 
   .second-slide .right-about-text {
-    text-align: left;
-    margin-left: 15px;
-    margin-left: 30px;
+    text-align: center
+  }
+  .team-member-card h5 {
+    font-size: 10px;
+    margin: 0;
   }
 
   .second-slide .left-about-text {
