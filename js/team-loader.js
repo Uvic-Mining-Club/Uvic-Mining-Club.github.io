@@ -26,7 +26,7 @@ function buildTeamMemberBio(member) {
     
     return `
         <div class="team-member-container">
-            <img src="${imagePath}" class="team-img-fixed" alt="${member.name}">
+            <img src="${imagePath}" class="team-img-fixed" alt="${member.name}" style="width: 200px; height: 200px; object-fit: cover;">
             <div class="right-about-text">
                 <h4>${member.name}</h4>
                 <p>${member.role}</p>
