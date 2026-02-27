@@ -2,7 +2,13 @@
 async function loadTeamData() {
     try {
         const response = await fetch('./json/teamstruct.json');
-        const teamData = response.json();
+        const teamData = await response.json();
+        
+        // Validate that data structure exists
+        if (!teamData || typeof teamData !== 'object') {
+            throw new Error('Invalid team data structure');
+        }
+        
         return teamData;
     } catch (error) {
         console.error('Error loading team data:', error);
@@ -53,10 +59,10 @@ function buildTeamMemberGrid(members) {
     `;
 }
 
-// Main function to render team page
-async function renderTeamPage() {
+// Generate team page HTML (expensive operation)
+async function generateTeamPageHTML() {
     const teamData = await loadTeamData();
-    if (!teamData) return;
+    if (!teamData) return null;
     
     let html = '<div class="team-profiles">';
     
@@ -108,10 +114,31 @@ async function renderTeamPage() {
     
     html += '</div>';
     
-    // Insert into the DOM
+    return html;
+}
+
+// Main function to render team page
+// Note: JSON caching is handled by Service Worker (24-hour cache with auto-refresh detection)
+async function renderTeamPage() {
     const container = document.getElementById('team-content');
-    if (container) {
-        container.innerHTML = html;
+    if (!container) return;
+    
+    try {
+        const teamData = await loadTeamData();
+        if (!teamData) {
+            container.innerHTML = '<p>Error loading team data.</p>';
+            return;
+        }
+        
+        const html = await generateTeamPageHTML();
+        if (html) {
+            container.innerHTML = html;
+        } else {
+            container.innerHTML = '<p>Error generating team profiles.</p>';
+        }
+    } catch (error) {
+        console.error('Error in renderTeamPage:', error);
+        container.innerHTML = '<p>Error loading team data.</p>';
     }
 }
 
